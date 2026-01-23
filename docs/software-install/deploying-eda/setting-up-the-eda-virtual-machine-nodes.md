@@ -552,6 +552,9 @@ This procedure expects two networks to be available on the KVM hypervisors. The 
     If the node is not a storage node, you can remove the second --disk line.
     ///
 
+8. You can use `virsh list --all` to check the state of your VMs and you should be able to ping them.
+9. If you think you misconfigured a node and you want to delete it, you can use `virsh destroy <node-name>` to bring it down and `virsh undefine <node-name>` to delete it.
+
 ///
 
 ### Creating the VM on bridged networks on VMware vSphere
